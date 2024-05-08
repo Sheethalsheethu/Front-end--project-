@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>resort</title>
+ 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>" Crystal Resort "</h1>
+            <h4><i>"make your day a memorable"</i></h4>
+            <button type="button"><span></span>view room details</button>
+        </div> 
+    </header>
+<div id="sidenav">
+    <nav>
+        <ul>
+     <li><a href="./index.html"><img src="./logo1.png" width="30" height="30">  Home</a></li>
+    <li><a href="./about.html"><img src="./logo2.png" width="30" height="30">  About us</a></li>
+<li><a href="./bookrooms.html"><img src="./logo4.jpg" width="30" height="30">  Book a room </a></li>
+ <li><a><img src="./logo3.png" width="30" height="30">  Help  </a></li>
+        </ul>
+    </nav></div>
+<div id="menubtn">
+    <img src="./menu button.png" id="menu" >
+</div>
+<script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+     sidenav.style.right="-250px";
+      menubtn.onclick = function(){
+        if(sidenav.style.right == "-250px"){
+            sidenav.style.right="0";
+            menu.src ="close.png";
+        }
+        else{
+            sidenav.style.right = "-250px";
+            menu.src ="./menu button.png";
+        }
+    }
+</script>
+<marquee behavior="alternate" bgcolor="lightblue"  height="30px"> Book your rooms online 
+    now</marquee> 
+<section id="feature">
+    <div class="title-text">
+        <p>features</p>
+        <h2>our location getting here</h2>
+    <br>
+        The crystal resort , Bangalore<br>
+        97 Residency Road, Bengaluru,Karnataka,India,560 025<br/>
+        Tel: +91 78-8754 9000<br>
+        <br><h2>Our Service and Facilities</h2><br>
+          Clean and hygienic rooms<br>
+          Game rooms<br>
+          Swimming pool<br>
+          Gym<br>
+          A restaurant<br>
+          pampering treatments <br>
+         <br> <h2>Follow us on</h2><br>
+          <img src="./image1.png" width="20" height="20" align="center">
+          <img src="./img2.png"  width="30" height="30" align="center">
+          <img src="./img3.png"  width="20" height="20" align="center">
+          <img src="./img4.png"  width="20" height="20" align="center">
+    </div>
+</section>
+</body>
+</html>
